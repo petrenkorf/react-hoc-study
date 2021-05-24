@@ -27,6 +27,8 @@ function App() {
   );
 }
 
-
+/* I probably should not be passing the authentication status as a prop,
+   but for an example, this is good enough
+*/
 
 export default App;

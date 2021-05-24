@@ -1,6 +1,7 @@
 import './App.css';
 import { useState} from "react";
 import NewsCard from "./components/NewsCard";
+import Advertising from "./components/Advertising";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(0);
@@ -20,9 +21,12 @@ function App() {
         <NewsCard loginStatus={isAuthenticated}></NewsCard>
         <NewsCard loginStatus={isAuthenticated}></NewsCard>
         <NewsCard loginStatus={isAuthenticated}></NewsCard>
+        <Advertising loginStatus={isAuthenticated} />
       </header>
     </div>
   );
 }
+
+
 
 export default App;
